@@ -12,7 +12,7 @@ namespace dinozaver
 {
     public partial class ukazi : Form
     {
-        igra dino_igra = pozdrav.dino_igra;
+        Spremenljivke spremenljivke = pozdrav.spremenljivke;
 
         public ukazi()
         {
@@ -22,16 +22,16 @@ namespace dinozaver
 
         private void ponastavi()
         {
-            cigaret.Text = dino_igra.ukaz_za_orozje[0];
-            kapa.Text = dino_igra.ukaz_za_orozje[1];
-            kladivo.Text = dino_igra.ukaz_za_orozje[2];
-            kozarec.Text = dino_igra.ukaz_za_orozje[3];
-            lizika.Text = dino_igra.ukaz_za_orozje[4];
-            pistola.Text = dino_igra.ukaz_za_orozje[5];
-            sablja.Text = dino_igra.ukaz_za_orozje[6];
-            gor.Text = dino_igra.ukaz_za_premik["gor"];
-            dol.Text = dino_igra.ukaz_za_premik["dol"];
-            konec_orozje.Text = dino_igra.konec_orozja;
+            cigaret.Text = spremenljivke.Ukaz_za_orozje(0);
+            kapa.Text = spremenljivke.Ukaz_za_orozje(1);
+            kladivo.Text = spremenljivke.Ukaz_za_orozje(2);
+            kozarec.Text = spremenljivke.Ukaz_za_orozje(3);
+            lizika.Text = spremenljivke.Ukaz_za_orozje(4);
+            pistola.Text = spremenljivke.Ukaz_za_orozje(5);
+            sablja.Text = spremenljivke.Ukaz_za_orozje(6);
+            gor.Text = spremenljivke.Ukaz_za_premik("gor");
+            dol.Text = spremenljivke.Ukaz_za_premik("dol");
+            konec_orozje.Text = spremenljivke.Konec_orozja;
         }
 
 
@@ -124,31 +124,30 @@ namespace dinozaver
                 Ustrezni_ukazi();
 
                 // poporavimo ukaze v igri
-                dino_igra.ukaz_za_orozje[0] = cigaret.Text;
-                dino_igra.ukaz_za_orozje[1] = kapa.Text;
-                dino_igra.ukaz_za_orozje[2] = kladivo.Text;
-                dino_igra.ukaz_za_orozje[3] = kozarec.Text;
-                dino_igra.ukaz_za_orozje[4] = lizika.Text;
-                dino_igra.ukaz_za_orozje[5] = pistola.Text;
-                dino_igra.ukaz_za_orozje[6] = sablja.Text;
+                spremenljivke.Ukaz_za_orozje(1, kapa.Text);
+                spremenljivke.Ukaz_za_orozje(0, cigaret.Text);
+                spremenljivke.Ukaz_za_orozje(2, kladivo.Text);
+                spremenljivke.Ukaz_za_orozje(3, kozarec.Text);
+                spremenljivke.Ukaz_za_orozje(4, lizika.Text);
+                spremenljivke.Ukaz_za_orozje(5, pistola.Text);
+                spremenljivke.Ukaz_za_orozje(6, sablja.Text);
 
-                dino_igra.ukaz_za_premik["gor"] = gor.Text;
-                dino_igra.ukaz_za_premik["dol"] = dol.Text;
+                spremenljivke.Ukaz_za_premik("gor", gor.Text);
+                spremenljivke.Ukaz_za_premik("dol", dol.Text);
 
-                dino_igra.konec_orozja = konec_orozje.Text;
+                spremenljivke.Konec_orozja = konec_orozje.Text;
 
-                dino_igra.konec_uporabe_orozja = dovoljeni_ukazi[konec_orozje.Text];
+                spremenljivke.Konec_uporabe_orozja = dovoljeni_ukazi[konec_orozje.Text];
 
                 foreach (TextBox ukaz in new TextBox[] { kladivo, pistola, sablja, cigaret, kapa, kozarec, lizika })
                 {
-                    dino_igra.gumb_za_orozje[ukaz.Text] = dovoljeni_ukazi[ukaz.Text];
+                    spremenljivke.Gumb_za_orozje(ukaz.Text, dovoljeni_ukazi[ukaz.Text]);
                 }
 
                 foreach (TextBox ukaz in new TextBox[] { gor, dol })
                 {
-                    dino_igra.gumb_za_premik[ukaz.Text] = dovoljeni_ukazi[ukaz.Text];
+                    spremenljivke.Gumb_za_premik(ukaz.Text, dovoljeni_ukazi[ukaz.Text]);
                 }
-
                 // zapremo okno
                 Close();
             }

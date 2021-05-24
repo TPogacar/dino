@@ -12,38 +12,20 @@ namespace dinozaver
 {
     public partial class konec : Form
     {
-        igra dino_igra = pozdrav.dino_igra;
+        Spremenljivke spremenljivke = pozdrav.spremenljivke;
 
         public konec()        
         {
-            // prikažemo ustrezen najboljši rezultat
-            //if (dosežen_nov_top_rezultat)
-            //{
-            //    try
-            //    {
-            //        rezultat.Text = igra().top_tocke.ToString();
-            //    }
-            //    catch
-            //    {
-            //        // okno igre smo že zaprli => podatki so se izgubili
-            //        rezultat.Text = "ERROR";
-            //    }
-            //}
-            //else
-            //{
-            //    try
-            //    {
-            //        rezultat.Text = new igra().tocke.ToString();
-            //    }
-            //    catch
-            //    {
-            //        // okno igre smo že zaprli => podatki so se izgubili
-            //        rezultat.Text = "ERROR";
-            //    }
-
-            //}
-
             InitializeComponent();
+            // prikažemo ustrezen najboljši rezultat
+            if (spremenljivke.dosežen_nov_top_rezultat)
+            {
+                rezultat.Text = spremenljivke.Top_tocke.ToString();                
+            }
+            else
+            {
+                rezultat.Text = spremenljivke.Tocke.ToString();
+            }
         }
 
         /// <summary>
@@ -54,7 +36,7 @@ namespace dinozaver
         private void da_Click(object sender, EventArgs e)
         {
             Close();
-            dino_igra.ponastavi_igro();
+            new igra().Show();
         }
 
         private void ne_Click(object sender, EventArgs e)

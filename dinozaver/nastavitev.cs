@@ -13,9 +13,9 @@ namespace dinozaver
 {
     public partial class nastavitev : Form
     {        
-        igra dino_igra = pozdrav.dino_igra;
+        Spremenljivke spremenljivke = pozdrav.spremenljivke;
         string naslov_rezultatov = "rezultati.txt";
-        
+
         public nastavitev()
         {
             // če datoteke s top rezultati še ni, jo ustvari
@@ -35,7 +35,7 @@ namespace dinozaver
                         // v datoteki so imena igralcev ločena od pripadajočih točk s `;`
                         // v vsaki vrstici je natanko en igralec in en rezultat
                         string[] podatka = vrstica.Split(';');
-                        dino_igra.igralec_rezultat[podatka[0]] = int.Parse(podatka[1]);
+                        spremenljivke.igralec_rezultat[podatka[0]] = int.Parse(podatka[1]);
                     }
                 }
             }            
@@ -49,11 +49,10 @@ namespace dinozaver
         /// <param name="e"></param>
         private void da_Click(object sender, EventArgs e)
         {
-            dino_igra.ime_igralca = ime.Text;
-            dino_igra.top_tocke = dino_igra.igralec_rezultat.Values.DefaultIfEmpty(0).Max();
-            dino_igra.ponastavi_igro();
-            dino_igra.Show(); // PRED TEM SPREMENJENI UKAZI SE NA TEJ TOČKI IZGUBIJO!! ----------------------------------------------------------------------------------------------------------
+            spremenljivke.ime_igralca = ime.Text;
+            spremenljivke.Top_tocke = spremenljivke.igralec_rezultat.Values.DefaultIfEmpty(0).Max();
             Close();
+            new igra().Show();
         }
 
         /// <summary>
@@ -63,21 +62,18 @@ namespace dinozaver
         /// <param name="e"></param>
         private void ne_Click(object sender, EventArgs e)
         {
-            dino_igra.ime_igralca = ime.Text;
+            Close();
+            spremenljivke.ime_igralca = ime.Text;
             // že obstoječi igralec => odpremo vprašanje
-            if (dino_igra.igralec_rezultat.Keys.Contains(ime.Text))
+            if (spremenljivke.igralec_rezultat.Keys.Contains(ime.Text))
             {
-                ponovni_zacetek nova = new ponovni_zacetek();
-                nova.Show();
+                new ponovni_zacetek().Show();
             }
             // avtomatično pričnemo igro
             else
             {
-                // PRED TEM SPREMENJENI UKAZI SE NA TEJ TOČKI IZGUBIJO!! ----------------------------------------------------------------------------------------------------------
-                dino_igra.Show();
-                dino_igra.ponastavi_igro();
+                new igra().Show();
             }
-            Close();
         }
     }
 }

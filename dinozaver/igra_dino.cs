@@ -10,6 +10,8 @@ namespace dinozaver
 {
     public partial class igra : Form
     {
+        Spremenljivke spremenljivke = pozdrav.spremenljivke;
+
         const int KDAJ_POVECAMO_HITROST = 10;  // po koliko doseženih točkah se poveča hitrost igre
         bool skok;  // ali igralec skače
         int hitrost_skoka;  // kako hitro skače
@@ -17,29 +19,11 @@ namespace dinozaver
         int sila;  // sila skoka
         int HITROST_OVIRE;  // hitrost ovir
         int HITROST_OBLAKA;  // hitrost oblakov
-        public int tocke = 0;  // dosežene točke = koliko ovir je igralec premagal
-        public int top_tocke = 0;  // dosedaj najboljši rezultat
         public bool dosežen_nov_top_rezultat = false;  // če ne tekmujemo od začetka, moramo vedeti, ali smo že presegli prehdonji top rezultat
-        public Dictionary<string, int> igralec_rezultat = new Dictionary<string, int>();
-        public string ime_igralca;
         int KDAJ_ZAMENJAJ_SLIKO_PTICA = 9;  // na koliko trenutkov premakne krila (mora biti liho število)
         int koliko_trenutkov_ptic;
         int KDAJ_ZAMENJAJ_SLIKO_DINOTA = 5;  // na koliko trenutkov zamenja nogo
         int koliko_trenutkov_dino;
-
-        public int Max_tocke
-        {
-            get { return top_tocke; }
-            set
-            { 
-                // dosežemo nov najboljši rezultat
-                if (value > this.top_tocke)
-                {
-                    top_tocke = value;
-                    dosežen_nov_top_rezultat = true;
-                }
-            }
-        }
 
         Random rand = new Random();
         bool konec_igre;  // ali je igra končana
@@ -58,40 +42,7 @@ namespace dinozaver
             { 5, Properties.Resources.pistola },
             { 6, Properties.Resources.sablja }
         };
-        public Dictionary<int, string> ukaz_za_orozje = new Dictionary<int, string>()
-        {
-            { 0, "C" },
-            { 1, "K" },
-            { 2, "H" },
-            { 3, "G" },
-            { 4, "L" },
-            { 5, "P" },
-            { 6, "S" },
-        };
-        public Dictionary<string, string> ukaz_za_premik = new Dictionary<string, string>()
-        {
-            { "gor", "gor" },
-            { "dol", "dol" }
-        };
-        public string konec_orozja = "X";
-        public Dictionary<string, Keys> gumb_za_orozje = new Dictionary<string, Keys>()
-        {
-            { "cigaret", Keys.C },
-            { "kapa", Keys.K },
-            { "kladivo", Keys.H },
-            { "kozarec", Keys.G },
-            { "lizika", Keys.L },
-            { "pištola", Keys.P },
-            { "sablja", Keys.S }
-        };
-        public Dictionary<string, Keys> gumb_za_premik = new Dictionary<string, Keys>()
-        {
-            { "gor", Keys.Up },
-            { "dol", Keys.Down },
-            { "levo", Keys.Left },
-            { "desno", Keys.Right }
-        };
-        public Keys konec_uporabe_orozja = Keys.X;
+        
         int akcija_v_uporabi;  // ali dino lahko uporabi akcijo -> z -1 označimo, da nimamo nobenega orožja na zalogi, sicer katero uporablja
         int st_trenutna_akcija;
         int st_prihajajoca_akcija;
@@ -101,6 +52,7 @@ namespace dinozaver
         public igra()
         {
             InitializeComponent();
+            ponastavi_igro();
         }
 
         /// <summary>
@@ -111,13 +63,13 @@ namespace dinozaver
         private void pritisnjen(object sender, KeyEventArgs e)
         {
             // če trenutno ne skače, je na tleh in pritisne presledek ali puščica navzgor => skoči
-            if (e.KeyCode == gumb_za_premik["gor"] && !skok && dino.Bounds.IntersectsWith(tla.Bounds) && !konec_igre)
+            if (e.KeyCode == spremenljivke.Gumb_za_premik("gor") && !skok && dino.Bounds.IntersectsWith(tla.Bounds) && !konec_igre)
             {
                 skok = true;
                 dino.Image = Properties.Resources.dino_stoji;
             }
             // če trenutno ne skače, je na tleh in pritisne puščico navzdol => se skloni
-            if (e.KeyCode == gumb_za_premik["dol"] && !skok && !sklonjen && dino.Bounds.IntersectsWith(tla.Bounds) && !konec_igre)
+            if (e.KeyCode == spremenljivke.Gumb_za_premik("dol") && !skok && !sklonjen && dino.Bounds.IntersectsWith(tla.Bounds) && !konec_igre)
             {
                 dino.Image = Properties.Resources.dino_dol_leva;
                 sklonjen = true;
@@ -136,7 +88,7 @@ namespace dinozaver
             if (!konec_igre && st_trenutna_akcija >= 0)
             {
                 // cigaret
-                if (e.KeyCode == gumb_za_orozje["cigaret"])
+                if (e.KeyCode == spremenljivke.Gumb_za_orozje("cigaret"))
                 {
                     // nastavimo ozadja orožij
                     orozje_gor.Image = null;
@@ -150,7 +102,7 @@ namespace dinozaver
                 }
 
                 // kapa
-                else if (e.KeyCode == gumb_za_orozje["kapa"])
+                else if (e.KeyCode == spremenljivke.Gumb_za_orozje("kapa"))
                 {
                     orozje_gor.Image = vsa_orozja[st_trenutna_akcija];
                     orozje_sredina.Image = null;
@@ -163,7 +115,7 @@ namespace dinozaver
                 }
 
                 // ostalo - dino drži v rokah eno od ostalih dodatkov
-                else if (gumb_za_orozje.Values.Contains(e.KeyCode) && !new Keys[] { gumb_za_orozje["kapa"], gumb_za_orozje["cigaret"] }.Contains(e.KeyCode))
+                else if (spremenljivke.gumb_za_orozje.Values.Contains(e.KeyCode) && !new Keys[] { spremenljivke.Gumb_za_orozje("kapa"), spremenljivke.Gumb_za_orozje("cigaret") }.Contains(e.KeyCode))
                 {
                     orozje_gor.Image = null;
                     orozje_sredina.Image = null;
@@ -176,7 +128,7 @@ namespace dinozaver
                 }                
             }
             // ne želimo več uporabljati orožja
-            if (!konec_igre && e.KeyCode == konec_uporabe_orozja && akcija_v_uporabi >= 0)
+            if (!konec_igre && e.KeyCode == spremenljivke.Konec_uporabe_orozja && akcija_v_uporabi >= 0)
             {
                 orozje_gor.Image = null;
                 orozje_sredina.Image = null;
@@ -300,10 +252,9 @@ namespace dinozaver
             osnovna_sila = 15;
             HITROST_OVIRE = 9;
             HITROST_OBLAKA = 1;
-            tocke = 0;
-            Tocke.Text = $"Točke: {tocke}";
-            Max_tocke = tocke;
-            Top_tocke.Text = $"Najboljši rezultat: {top_tocke}";
+            spremenljivke.Tocke = 0; // morda ob koncu? --------------------------------------------------------------------------
+            Tocke.Text = $"Točke: {spremenljivke.Tocke}";
+            Top_tocke.Text = $"Najboljši rezultat: {spremenljivke.Top_tocke}";
             konec_igre = false;
             dino.Image = Properties.Resources.dino_leva;  // slika živega dinozavra
             dino.Top = tla.Top - dino.Height + 1;  // dinozavra postavimo na vrh tal (malo se prekrivata => da omejimo skoke)
@@ -331,7 +282,7 @@ namespace dinozaver
             orozje_gor.BackColor = Color.Transparent;
             akcija_v_uporabi = -1;
             st_trenutna_akcija = -1;
-            igralec.Text = $"IGRALEC: {ime_igralca} {gumb_za_premik["gor"]} {gumb_za_premik["dol"]}";
+            igralec.Text = $"IGRALEC: {spremenljivke.ime_igralca} {spremenljivke.Gumb_za_premik("gor")} {spremenljivke.Gumb_za_premik("dol")}";
 
             // združimo slike dinota in potencialnih orožij
             Zdruzi_dinota_z_orozji();
@@ -416,8 +367,8 @@ namespace dinozaver
             akcija.Left -= HITROST_OVIRE;
 
             // prikažemo rezultata
-            Tocke.Text = $"Točke: {tocke}";
-            Top_tocke.Text = $"Najboljši rezultat: {top_tocke}";
+            Tocke.Text = $"Točke: {spremenljivke.Tocke}";
+            Top_tocke.Text = $"Najboljši rezultat: {spremenljivke.Top_tocke}";
 
             // ustrezno nastavimo vrednosti skoka in sile
             if (skok && sila < 0)
@@ -507,7 +458,7 @@ namespace dinozaver
                             Nastavi_polozaj_ovire(x);
 
                             // premagali smo oviro
-                            Max_tocke = ++tocke;
+                            spremenljivke.Top_tocke = ++spremenljivke.Tocke;
                             if (x.Name == "kaktus_mini")
                             {
                                 kaktus_mini.Image = mini_kaktusi[rand.Next(0, mini_kaktusi.Count())];
@@ -531,6 +482,7 @@ namespace dinozaver
                             Zdruzi_dinota_z_orozji();
                             // prikažemo okno, z možnostmi nadaljevanja
                             new konec().Show();
+                            Close();
                             // -------------------------------------------------------------------------------------------------------------
                         }
                     }
@@ -555,7 +507,7 @@ namespace dinozaver
                             // slika akcije za navodilo
                             orozje_ukaz_slika.Image = vsa_orozja[st_trenutna_akcija];
                             // pripadajoča črka za navodilo ukaza
-                            orozje_ukaz.Text = ukaz_za_orozje[st_trenutna_akcija];
+                            orozje_ukaz.Text = spremenljivke.Ukaz_za_orozje(st_trenutna_akcija);
 
                             // nastavimo novo akcijo nekje na desni
                             st_prihajajoca_akcija = rand.Next(0, vsa_orozja.Count());
@@ -581,7 +533,7 @@ namespace dinozaver
                 hitrost_skoka = 0;
             }
 
-            if (tocke == KDAJ_POVECAMO_HITROST)
+            if (spremenljivke.Tocke == KDAJ_POVECAMO_HITROST)
             {
                 // igralec se je ogrel => povečamo hitrost
                 HITROST_OVIRE = 13;

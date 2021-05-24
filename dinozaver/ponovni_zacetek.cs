@@ -12,7 +12,7 @@ namespace dinozaver
 {
     public partial class ponovni_zacetek : Form
     {
-        igra dino_igra = pozdrav.dino_igra;
+        Spremenljivke spremenljivke = pozdrav.spremenljivke;
 
         public ponovni_zacetek()
         {
@@ -27,17 +27,17 @@ namespace dinozaver
         private void da_Click(object sender, EventArgs e)
         {
             Close();
+            igra dino_igra = new igra();
             dino_igra.Show();
-            dino_igra.ponastavi_igro();
         }
 
         // Nastavi top_tocke na točke trenutnega igralca, zapre zrenutno okno in odpre okno igro.
         private void ne_Click(object sender, EventArgs e)
         {
-            dino_igra.top_tocke = dino_igra.igralec_rezultat[dino_igra.ime_igralca];
+            spremenljivke.Top_tocke = spremenljivke.igralec_rezultat[spremenljivke.ime_igralca];
             Close();
+            igra dino_igra = new igra();
             dino_igra.Show();
-            dino_igra.ponastavi_igro();
         }
     }
 }

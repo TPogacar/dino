@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Spremenljivke.cs" />
     <Compile Include="ponovni_zacetek.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +98,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="konec.aa.resx">
+      <DependentUpon>konec.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ponovni_zacetek.resx">
       <DependentUpon>ponovni_zacetek.cs</DependentUpon>
     </EmbeddedResource>

@@ -136,9 +136,6 @@
   <data name="kapa.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 38</value>
   </data>
-  <data name="orozja.Text" xml:space="preserve">
-    <value>OROŽJA:</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="shrani.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -149,6 +146,9 @@
   <data name="&gt;&gt;kozarec.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="lizika.Location" type="System.Drawing.Point, System.Drawing">
+    <value>451, 519</value>
+  </data>
   <data name="pistola.Location" type="System.Drawing.Point, System.Drawing">
     <value>94, 386</value>
   </data>
@@ -158,12 +158,15 @@
   <data name="&gt;&gt;dol.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;pictureBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="shrani.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
-  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="&gt;&gt;cigaret.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="shrani.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 45</value>
@@ -179,9 +182,6 @@
   </data>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 443</value>
-  </data>
-  <data name="pictureBox6.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
   </data>
   <data name="dol.Location" type="System.Drawing.Point, System.Drawing">
     <value>844, 386</value>
@@ -224,6 +224,9 @@ Ostale tipke ustrezno poimenujej:
   <data name="&gt;&gt;kladivo.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
+  <data name="orozja.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
     <value>pictureBox2</value>
   </data>
@@ -233,8 +236,8 @@ Ostale tipke ustrezno poimenujej:
   <data name="konec_uporabe_orozja.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.2pt</value>
   </data>
-  <data name="&gt;&gt;konec_uporabe_orozja.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="naslov.Text" xml:space="preserve">
+    <value>NASTAVITEV UKAZNIH TIPK:</value>
   </data>
   <data name="kladivo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 16.2pt</value>
@@ -251,14 +254,14 @@ Ostale tipke ustrezno poimenujej:
   <data name="kapa.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 16.2pt</value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 311</value>
-  </data>
   <data name="cigaret.Location" type="System.Drawing.Point, System.Drawing">
     <value>451, 317</value>
   </data>
   <data name="kapa.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>23</value>
   </data>
   <data name="&gt;&gt;kozarec.Name" xml:space="preserve">
     <value>kozarec</value>
@@ -293,17 +296,20 @@ Ostale tipke ustrezno poimenujej:
   <data name="&gt;&gt;kozarec.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="shrani.Text" xml:space="preserve">
-    <value>SHRANI</value>
+  <data name="shrani.Location" type="System.Drawing.Point, System.Drawing">
+    <value>451, 628</value>
   </data>
   <data name="pocep.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
-  <data name="sablja.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 38</value>
+  <data name="&gt;&gt;naslov.Name" xml:space="preserve">
+    <value>naslov</value>
   </data>
   <data name="&gt;&gt;orozja.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 60</value>
   </data>
   <data name="dol.Text" xml:space="preserve">
     <value>dol</value>
@@ -337,9 +343,6 @@ Ostale tipke ustrezno poimenujej:
   </data>
   <data name="modni_dodatki.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="shrani.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.8pt</value>
   </data>
   <data name="&gt;&gt;konec_orozje.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -377,8 +380,8 @@ Ostale tipke ustrezno poimenujej:
   <data name="&gt;&gt;cigaret.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="skok.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  <data name="pictureBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 60</value>
   </data>
   <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -388,6 +391,9 @@ Ostale tipke ustrezno poimenujej:
   </data>
   <data name="&gt;&gt;preklici.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;modni_dodatki.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="kapa.Text" xml:space="preserve">
     <value>K</value>
@@ -440,9 +446,6 @@ Ostale tipke ustrezno poimenujej:
   <data name="preklici.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 13.8pt</value>
   </data>
-  <data name="&gt;&gt;pocep.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="gor.Text" xml:space="preserve">
     <value>gor</value>
   </data>
@@ -452,8 +455,8 @@ Ostale tipke ustrezno poimenujej:
   <data name="&gt;&gt;pistola.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="orozja.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="navodila.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -467,17 +470,20 @@ Ostale tipke ustrezno poimenujej:
   <data name="kladivo.Location" type="System.Drawing.Point, System.Drawing">
     <value>94, 317</value>
   </data>
-  <data name="&gt;&gt;shrani.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="modni_dodatki.Text" xml:space="preserve">
     <value>MODNI DODATKI:</value>
+  </data>
+  <data name="&gt;&gt;skok.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pictureBox6.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
   <data name="sablja.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 16.2pt</value>
+  </data>
+  <data name="&gt;&gt;modni_dodatki.ZOrder" xml:space="preserve">
+    <value>24</value>
   </data>
   <data name="&gt;&gt;premiki.Name" xml:space="preserve">
     <value>premiki</value>
@@ -509,6 +515,9 @@ Ostale tipke ustrezno poimenujej:
   <data name="pistola.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 38</value>
   </data>
+  <data name="pictureBox5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
   <data name="lizika.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
   </data>
@@ -518,14 +527,14 @@ Ostale tipke ustrezno poimenujej:
   <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="konec_orozje.Location" type="System.Drawing.Point, System.Drawing">
-    <value>94, 562</value>
-  </data>
   <data name="konec_uporabe_orozja.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 527</value>
   </data>
   <data name="orozja.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 265</value>
+  </data>
+  <data name="&gt;&gt;pistola.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
   <data name="cigaret.Text" xml:space="preserve">
     <value>C</value>
@@ -533,8 +542,8 @@ Ostale tipke ustrezno poimenujej:
   <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
-  <data name="&gt;&gt;naslov.Name" xml:space="preserve">
-    <value>naslov</value>
+  <data name="konec_orozje.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 562</value>
   </data>
   <data name="preklici.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -596,6 +605,9 @@ Ostale tipke ustrezno poimenujej:
   <data name="skok.Location" type="System.Drawing.Point, System.Drawing">
     <value>686, 326</value>
   </data>
+  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 60</value>
+  </data>
   <data name="premiki.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 13.8pt</value>
   </data>
@@ -614,6 +626,9 @@ Ostale tipke ustrezno poimenujej:
   <data name="premiki.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;naslov.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ukazi</value>
   </data>
@@ -626,17 +641,11 @@ Ostale tipke ustrezno poimenujej:
   <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;kladivo.Name" xml:space="preserve">
-    <value>kladivo</value>
+  <data name="&gt;&gt;pictureBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;sablja.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="shrani.Location" type="System.Drawing.Point, System.Drawing">
-    <value>451, 628</value>
-  </data>
-  <data name="sablja.Location" type="System.Drawing.Point, System.Drawing">
-    <value>94, 453</value>
+  <data name="shrani.Text" xml:space="preserve">
+    <value>SHRANI</value>
   </data>
   <data name="skok.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -647,20 +656,20 @@ Ostale tipke ustrezno poimenujej:
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lizika.Location" type="System.Drawing.Point, System.Drawing">
-    <value>451, 519</value>
+  <data name="&gt;&gt;navodila.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pocep.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="konec_orozje.Text" xml:space="preserve">
     <value>X</value>
   </data>
-  <data name="&gt;&gt;skok.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="skok.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
   </data>
-  <data name="pictureBox5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="sablja.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 453</value>
   </data>
   <data name="dol.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 16.2pt</value>
@@ -668,14 +677,11 @@ Ostale tipke ustrezno poimenujej:
   <data name="&gt;&gt;pocep.Name" xml:space="preserve">
     <value>pocep</value>
   </data>
-  <data name="konec_orozje.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 38</value>
-  </data>
   <data name="sablja.Text" xml:space="preserve">
     <value>S</value>
   </data>
-  <data name="&gt;&gt;navodila.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;konec_uporabe_orozja.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="konec_orozje.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 16.2pt</value>
@@ -686,26 +692,23 @@ Ostale tipke ustrezno poimenujej:
   <data name="premiki.Location" type="System.Drawing.Point, System.Drawing">
     <value>686, 265</value>
   </data>
-  <data name="lizika.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 38</value>
-  </data>
   <data name="&gt;&gt;kapa.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cigaret.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;sablja.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;kladivo.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>23</value>
+  <data name="orozja.Text" xml:space="preserve">
+    <value>OROŽJA:</value>
   </data>
   <data name="naslov.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 12</value>
   </data>
-  <data name="pictureBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 60</value>
+  <data name="&gt;&gt;kladivo.Name" xml:space="preserve">
+    <value>kladivo</value>
   </data>
   <data name="&gt;&gt;modni_dodatki.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -713,11 +716,14 @@ Ostale tipke ustrezno poimenujej:
   <data name="kapa.Location" type="System.Drawing.Point, System.Drawing">
     <value>451, 386</value>
   </data>
+  <data name="&gt;&gt;premiki.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="kozarec.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
-  <data name="&gt;&gt;pictureBox6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="konec_orozje.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 38</value>
   </data>
   <data name="naslov.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -731,14 +737,11 @@ Ostale tipke ustrezno poimenujej:
   <data name="kozarec.Text" xml:space="preserve">
     <value>G</value>
   </data>
-  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 60</value>
-  </data>
   <data name="&gt;&gt;dol.Name" xml:space="preserve">
     <value>dol</value>
   </data>
-  <data name="&gt;&gt;modni_dodatki.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 311</value>
   </data>
   <data name="pocep.Location" type="System.Drawing.Point, System.Drawing">
     <value>686, 395</value>
@@ -746,8 +749,11 @@ Ostale tipke ustrezno poimenujej:
   <data name="&gt;&gt;konec_orozje.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="naslov.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 38</value>
+  </data>
+  <data name="sablja.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 38</value>
   </data>
   <data name="&gt;&gt;pistola.Name" xml:space="preserve">
     <value>pistola</value>
@@ -761,9 +767,6 @@ Ostale tipke ustrezno poimenujej:
   <data name="cigaret.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 16.2pt</value>
   </data>
-  <data name="&gt;&gt;gor.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="premiki.Text" xml:space="preserve">
     <value>PREMIKANJE:</value>
   </data>
@@ -772,9 +775,6 @@ Ostale tipke ustrezno poimenujej:
   </data>
   <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lizika.Text" xml:space="preserve">
-    <value>L</value>
   </data>
   <data name="&gt;&gt;dol.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -785,8 +785,8 @@ Ostale tipke ustrezno poimenujej:
   <data name="&gt;&gt;kapa.Name" xml:space="preserve">
     <value>kapa</value>
   </data>
-  <data name="naslov.Size" type="System.Drawing.Size, System.Drawing">
-    <value>488, 38</value>
+  <data name="&gt;&gt;gor.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="kladivo.Text" xml:space="preserve">
     <value>H</value>
@@ -803,8 +803,8 @@ Ostale tipke ustrezno poimenujej:
   <data name="&gt;&gt;lizika.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;skok.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="skok.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;pictureBox6.Name" xml:space="preserve">
     <value>pictureBox6</value>
@@ -812,8 +812,8 @@ Ostale tipke ustrezno poimenujej:
   <data name="&gt;&gt;preklici.Name" xml:space="preserve">
     <value>preklici</value>
   </data>
-  <data name="&gt;&gt;naslov.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;shrani.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 60</value>
@@ -821,13 +821,13 @@ Ostale tipke ustrezno poimenujej:
   <data name="modni_dodatki.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
-  <data name="naslov.Text" xml:space="preserve">
-    <value>NASTAVITEV UKAZNIH TIPK:</value>
+  <data name="lizika.Text" xml:space="preserve">
+    <value>L</value>
   </data>
   <data name="&gt;&gt;konec_uporabe_orozja.Name" xml:space="preserve">
     <value>konec_uporabe_orozja</value>
   </data>
-  <data name="pictureBox7.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 60</value>
   </data>
   <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
@@ -839,8 +839,8 @@ Ostale tipke ustrezno poimenujej:
   <data name="orozja.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
-  <data name="&gt;&gt;pistola.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="&gt;&gt;skok.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="kozarec.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 38</value>
@@ -851,8 +851,8 @@ Ostale tipke ustrezno poimenujej:
   <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;premiki.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lizika.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 38</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -860,8 +860,8 @@ Ostale tipke ustrezno poimenujej:
   <data name="pocep.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 25</value>
   </data>
-  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 60</value>
+  <data name="shrani.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13.8pt</value>
   </data>
   <data name="premiki.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -869,8 +869,8 @@ Ostale tipke ustrezno poimenujej:
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 60</value>
   </data>
-  <data name="&gt;&gt;modni_dodatki.ZOrder" xml:space="preserve">
-    <value>24</value>
+  <data name="pictureBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
   </data>
   <data name="gor.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 16.2pt</value>
@@ -883,8 +883,5 @@ Ostale tipke ustrezno poimenujej:
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>sl-SI</value>
   </metadata>
 </root>

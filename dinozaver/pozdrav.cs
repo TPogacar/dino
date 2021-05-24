@@ -12,12 +12,12 @@ namespace dinozaver
 {
     public partial class pozdrav : Form
     {
-        public static igra dino_igra;
+        public static Spremenljivke spremenljivke;
 
         public pozdrav()
         {
             InitializeComponent();
-            dino_igra = new igra();
+            spremenljivke = new Spremenljivke();
         }
 
         /// <summary>
@@ -27,8 +27,7 @@ namespace dinozaver
         /// <param name="e"></param>
         private void nastavi_ukaze_Click(object sender, EventArgs e)
         {
-            ukazi stran_ukazi = new ukazi();
-            stran_ukazi.Show();
+            new ukazi().Show();
         }
 
         /// <summary>
@@ -38,8 +37,7 @@ namespace dinozaver
         /// <param name="e"></param>
         private void zacni_Click(object sender, EventArgs e)
         {
-            nastavitev stran_nastavitve = new nastavitev();
-            stran_nastavitve.Show();
+            new nastavitev().Show();
         }
     }
 }

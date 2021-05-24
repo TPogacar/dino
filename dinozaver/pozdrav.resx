@@ -121,8 +121,8 @@
   <data name="zacni.Location" type="System.Drawing.Point, System.Drawing">
     <value>369, 245</value>
   </data>
-  <data name="&gt;&gt;nastavi_ukaze.Name" xml:space="preserve">
-    <value>nastavi_ukaze</value>
+  <data name="naslov.Text" xml:space="preserve">
+    <value>POZDRAVLJEN V IGRI MOJ DINOZAVER!</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="zacni.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -137,6 +137,9 @@
   <data name="&gt;&gt;opis.Name" xml:space="preserve">
     <value>opis</value>
   </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>pozdravno okno</value>
+  </data>
   <data name="&gt;&gt;zacni.Name" xml:space="preserve">
     <value>zacni</value>
   </data>
@@ -145,9 +148,6 @@
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="opis.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>pozdrav</value>
@@ -215,6 +215,9 @@ Pri tem je priporočljivo, da si jih izbereš enolično.</value>
   <data name="nastavi_ukaze.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
+  <data name="naslov.Size" type="System.Drawing.Size, System.Drawing">
+    <value>626, 36</value>
+  </data>
   <data name="nastavi_ukaze.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
@@ -224,14 +227,11 @@ Pri tem je priporočljivo, da si jih izbereš enolično.</value>
   <data name="naslov.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="zacni.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 44</value>
-  </data>
   <data name="&gt;&gt;naslov.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="naslov.Text" xml:space="preserve">
-    <value>POZDRAVLJEN V IGRI MOJ DINOZAVER!</value>
+  <data name="opis.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="&gt;&gt;naslov.Name" xml:space="preserve">
     <value>naslov</value>
@@ -245,8 +245,8 @@ Pri tem je priporočljivo, da si jih izbereš enolično.</value>
   <data name="nastavi_ukaze.Text" xml:space="preserve">
     <value>NASTAVI UKAZNE TIPKE</value>
   </data>
-  <data name="naslov.Size" type="System.Drawing.Size, System.Drawing">
-    <value>626, 36</value>
+  <data name="&gt;&gt;nastavi_ukaze.Name" xml:space="preserve">
+    <value>nastavi_ukaze</value>
   </data>
   <data name="&gt;&gt;naslov.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -254,13 +254,10 @@ Pri tem je priporočljivo, da si jih izbereš enolično.</value>
   <data name="opis.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>pozdravno okno</value>
+  <data name="zacni.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 44</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>sl-SI</value>
   </metadata>
 </root>
