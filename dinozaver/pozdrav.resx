@@ -117,47 +117,68 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="zacni.Location" type="System.Drawing.Point, System.Drawing">
-    <value>369, 245</value>
-  </data>
-  <data name="naslov.Text" xml:space="preserve">
-    <value>POZDRAVLJEN V IGRI MOJ DINOZAVER!</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="zacni.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="zacni.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 245</value>
   </data>
-  <data name="&gt;&gt;zacni.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;opis.Name" xml:space="preserve">
-    <value>opis</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>pozdravno okno</value>
-  </data>
-  <data name="&gt;&gt;zacni.Name" xml:space="preserve">
-    <value>zacni</value>
-  </data>
-  <data name="&gt;&gt;nastavi_ukaze.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>pozdrav</value>
+  <data name="zacni.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 44</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="zacni.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;opis.Parent" xml:space="preserve">
+  <data name="zacni.Text" xml:space="preserve">
+    <value>ZAČNI IGRO!</value>
+  </data>
+  <data name="&gt;&gt;zacni.Name" xml:space="preserve">
+    <value>zacni</value>
+  </data>
+  <data name="&gt;&gt;zacni.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;zacni.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;zacni.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="nastavi_ukaze.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="nastavi_ukaze.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 245</value>
+  </data>
+  <data name="nastavi_ukaze.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 44</value>
+  </data>
+  <data name="nastavi_ukaze.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="nastavi_ukaze.Text" xml:space="preserve">
+    <value>NASTAVI UKAZNE TIPKE</value>
+  </data>
+  <data name="&gt;&gt;nastavi_ukaze.Name" xml:space="preserve">
+    <value>nastavi_ukaze</value>
+  </data>
+  <data name="&gt;&gt;nastavi_ukaze.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nastavi_ukaze.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;nastavi_ukaze.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="opis.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="opis.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="opis.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 58</value>
@@ -165,8 +186,8 @@
   <data name="opis.Size" type="System.Drawing.Size, System.Drawing">
     <value>633, 162</value>
   </data>
-  <data name="&gt;&gt;nastavi_ukaze.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="opis.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="opis.Text" xml:space="preserve">
     <value>Ta igra je podobna Googlovemu T-Rexu.
@@ -179,85 +200,64 @@ Pozor! Skok v luknjo je v vsakem primeru smrtno nevaren.
 Ker ima vsak igralec svoje priljubljene ukazne tipke, si jih lahko v nadaljevanju poljubno nastaviš.
 Pri tem je priporočljivo, da si jih izbereš enolično.</value>
   </data>
-  <data name="opis.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
-  </data>
-  <data name="&gt;&gt;naslov.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="zacni.Text" xml:space="preserve">
-    <value>ZAČNI IGRO!</value>
-  </data>
-  <data name="naslov.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 9</value>
+  <data name="&gt;&gt;opis.Name" xml:space="preserve">
+    <value>opis</value>
   </data>
   <data name="&gt;&gt;opis.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;opis.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="naslov.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 18pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;zacni.Parent" xml:space="preserve">
+  <data name="&gt;&gt;opis.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="naslov.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="nastavi_ukaze.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 44</value>
-  </data>
-  <data name="nastavi_ukaze.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="naslov.Size" type="System.Drawing.Size, System.Drawing">
-    <value>626, 36</value>
-  </data>
-  <data name="nastavi_ukaze.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;nastavi_ukaze.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;opis.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="naslov.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;naslov.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="naslov.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt, style=Bold</value>
   </data>
-  <data name="opis.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
+  <data name="naslov.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="naslov.Size" type="System.Drawing.Size, System.Drawing">
+    <value>626, 36</value>
+  </data>
+  <data name="naslov.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="naslov.Text" xml:space="preserve">
+    <value>POZDRAVLJEN V IGRI MOJ DINOZAVER!</value>
   </data>
   <data name="&gt;&gt;naslov.Name" xml:space="preserve">
     <value>naslov</value>
   </data>
-  <data name="&gt;&gt;zacni.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="nastavi_ukaze.Location" type="System.Drawing.Point, System.Drawing">
-    <value>178, 245</value>
-  </data>
-  <data name="nastavi_ukaze.Text" xml:space="preserve">
-    <value>NASTAVI UKAZNE TIPKE</value>
-  </data>
-  <data name="&gt;&gt;nastavi_ukaze.Name" xml:space="preserve">
-    <value>nastavi_ukaze</value>
-  </data>
   <data name="&gt;&gt;naslov.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="opis.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;naslov.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="zacni.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 44</value>
+  <data name="&gt;&gt;naslov.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Pozdravno okno</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Pozdrav</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

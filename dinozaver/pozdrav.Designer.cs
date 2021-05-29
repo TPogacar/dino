@@ -1,7 +1,7 @@
 ﻿
 namespace dinozaver
 {
-    partial class pozdrav
+    partial class Pozdrav
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace dinozaver
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(pozdrav));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pozdrav));
             this.zacni = new System.Windows.Forms.Button();
             this.nastavi_ukaze = new System.Windows.Forms.Button();
             this.opis = new System.Windows.Forms.Label();
@@ -38,16 +38,16 @@ namespace dinozaver
             // 
             // zacni
             // 
-            resources.ApplyResources(this.zacni, "zacni");
             this.zacni.BackColor = System.Drawing.Color.LightGray;
+            resources.ApplyResources(this.zacni, "zacni");
             this.zacni.Name = "zacni";
             this.zacni.UseVisualStyleBackColor = false;
             this.zacni.Click += new System.EventHandler(this.zacni_Click);
             // 
             // nastavi_ukaze
             // 
-            resources.ApplyResources(this.nastavi_ukaze, "nastavi_ukaze");
             this.nastavi_ukaze.BackColor = System.Drawing.Color.LightGray;
+            resources.ApplyResources(this.nastavi_ukaze, "nastavi_ukaze");
             this.nastavi_ukaze.Name = "nastavi_ukaze";
             this.nastavi_ukaze.UseVisualStyleBackColor = false;
             this.nastavi_ukaze.Click += new System.EventHandler(this.nastavi_ukaze_Click);
@@ -62,7 +62,7 @@ namespace dinozaver
             resources.ApplyResources(this.naslov, "naslov");
             this.naslov.Name = "naslov";
             // 
-            // pozdrav
+            // Pozdrav
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -73,7 +73,7 @@ namespace dinozaver
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "pozdrav";
+            this.Name = "Pozdrav";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,7 +1,7 @@
 ﻿
 namespace dinozaver
 {
-    partial class ukazi
+    partial class Ukazi
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace dinozaver
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ukazi));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ukazi));
             this.navodila = new System.Windows.Forms.Label();
             this.dol = new System.Windows.Forms.TextBox();
             this.gor = new System.Windows.Forms.TextBox();
@@ -98,8 +98,8 @@ namespace dinozaver
             // 
             // preklici
             // 
-            resources.ApplyResources(this.preklici, "preklici");
             this.preklici.BackColor = System.Drawing.Color.Silver;
+            resources.ApplyResources(this.preklici, "preklici");
             this.preklici.Name = "preklici";
             this.preklici.UseVisualStyleBackColor = false;
             this.preklici.Click += new System.EventHandler(this.preklici_Click);
@@ -116,8 +116,8 @@ namespace dinozaver
             // 
             // shrani
             // 
-            resources.ApplyResources(this.shrani, "shrani");
             this.shrani.BackColor = System.Drawing.Color.Silver;
+            resources.ApplyResources(this.shrani, "shrani");
             this.shrani.Name = "shrani";
             this.shrani.UseVisualStyleBackColor = false;
             this.shrani.Click += new System.EventHandler(this.shrani_Click);
@@ -159,57 +159,57 @@ namespace dinozaver
             // 
             // pictureBox7
             // 
-            resources.ApplyResources(this.pictureBox7, "pictureBox7");
             this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox7.Image = global::dinozaver.Properties.Resources.kozarec;
+            resources.ApplyResources(this.pictureBox7, "pictureBox7");
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox6
             // 
-            resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox6.Image = global::dinozaver.Properties.Resources.kapa;
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
-            resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox5.Image = global::dinozaver.Properties.Resources.cigaret;
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox4.Image = global::dinozaver.Properties.Resources.lizika;
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox3.Image = global::dinozaver.Properties.Resources.sablja;
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Image = global::dinozaver.Properties.Resources.pistola;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = global::dinozaver.Properties.Resources.kladivo;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
@@ -228,7 +228,7 @@ namespace dinozaver
             resources.ApplyResources(this.naslov, "naslov");
             this.naslov.Name = "naslov";
             // 
-            // ukazi
+            // Ukazi
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -262,7 +262,7 @@ namespace dinozaver
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "ukazi";
+            this.Name = "Ukazi";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

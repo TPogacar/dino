@@ -11,12 +11,13 @@ using System.IO;
 
 namespace dinozaver
 {
-    public partial class nastavitev : Form
-    {        
-        Spremenljivke spremenljivke = pozdrav.spremenljivke;
-        string naslov_rezultatov = "rezultati.txt";
+    public partial class Nastavitev : Form
+    {
+        #region Konstante
+        public static string naslov_rezultatov = @"rezultati.txt";
+        #endregion
 
-        public nastavitev()
+        public Nastavitev()
         {
             // če datoteke s top rezultati še ni, jo ustvari
             if (!File.Exists(naslov_rezultatov))
@@ -35,13 +36,14 @@ namespace dinozaver
                         // v datoteki so imena igralcev ločena od pripadajočih točk s `;`
                         // v vsaki vrstici je natanko en igralec in en rezultat
                         string[] podatka = vrstica.Split(';');
-                        spremenljivke.igralec_rezultat[podatka[0]] = int.Parse(podatka[1]);
+                        Pozdrav.spremenljivke.Igralec_rezultat(podatka[0], int.Parse(podatka[1]));
                     }
                 }
             }            
             InitializeComponent();
         }
 
+        #region Gumbi
         /// <summary>
         /// Želimo igrati proti vsem igralcem. Zapomnimo si ime trenutnega igralca ter poiščemo najboljši rezultat vseh igralcev ter ga spravimo v top_tocke. Nato zapremo trenutno okno in odpremo igro.
         /// </summary>
@@ -49,8 +51,9 @@ namespace dinozaver
         /// <param name="e"></param>
         private void da_Click(object sender, EventArgs e)
         {
-            spremenljivke.ime_igralca = ime.Text;
-            spremenljivke.Top_tocke = spremenljivke.igralec_rezultat.Values.DefaultIfEmpty(0).Max();
+            Pozdrav.spremenljivke.Ime_igralca = ime.Text;
+            Pozdrav.spremenljivke.Top_tocke = Pozdrav.spremenljivke.igralec_rezultat.Values.DefaultIfEmpty(0).Max();
+            Pozdrav.spremenljivke.Dosezen_nov_top_rezultat = false;
             Close();
             new igra().Show();
         }
@@ -63,17 +66,19 @@ namespace dinozaver
         private void ne_Click(object sender, EventArgs e)
         {
             Close();
-            spremenljivke.ime_igralca = ime.Text;
+            Pozdrav.spremenljivke.Ime_igralca = ime.Text;
             // že obstoječi igralec => odpremo vprašanje
-            if (spremenljivke.igralec_rezultat.Keys.Contains(ime.Text))
+            if (Pozdrav.spremenljivke.Igralec_rezultat(Pozdrav.spremenljivke.Ime_igralca) != -1)
             {
-                new ponovni_zacetek().Show();
+                new Ponovni_zacetek().Show();
             }
             // avtomatično pričnemo igro
             else
             {
+                Pozdrav.spremenljivke.Top_tocke = 0;
                 new igra().Show();
             }
         }
+        #endregion
     }
 }

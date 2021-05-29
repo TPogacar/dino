@@ -16,7 +16,7 @@ namespace dinozaver
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new pozdrav());
+            Application.Run(new Pozdrav());
         }
     }
 }

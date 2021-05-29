@@ -124,15 +124,9 @@
   <data name="&gt;&gt;rezultat.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>konec igre</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 16</value>
-  </data>
-  <data name="da.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
   </data>
   <data name="rezultat.Location" type="System.Drawing.Point, System.Drawing">
     <value>74, 119</value>
@@ -143,11 +137,11 @@
   <data name="&gt;&gt;naj_rezultat.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="da.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
   <data name="&gt;&gt;ne.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>konec</value>
   </data>
   <data name="&gt;&gt;rezultat.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -176,14 +170,14 @@
   <data name="&gt;&gt;ne.Name" xml:space="preserve">
     <value>ne</value>
   </data>
-  <data name="&gt;&gt;ustrajam.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
   <data name="&gt;&gt;ustrajam.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="naj_rezultat.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="rezultat.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -212,17 +206,23 @@
   <data name="&gt;&gt;ustrajam.Name" xml:space="preserve">
     <value>ustrajam</value>
   </data>
+  <data name="ustrajam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 188</value>
+  </data>
   <data name="&gt;&gt;ustrajam.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="&gt;&gt;da.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="naj_rezultat.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;ustrajam.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="ne.Location" type="System.Drawing.Point, System.Drawing">
     <value>39, 228</value>
@@ -236,11 +236,11 @@
   <data name="&gt;&gt;naj_rezultat.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ustrajam.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 188</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>konec igre</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Konec</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

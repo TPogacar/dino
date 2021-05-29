@@ -1,7 +1,7 @@
 ﻿
 namespace dinozaver
 {
-    partial class ponovni_zacetek
+    partial class Ponovni_zacetek
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace dinozaver
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ponovni_zacetek));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ponovni_zacetek));
             this.ne = new System.Windows.Forms.Button();
             this.da = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@ namespace dinozaver
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // ponovni_zacetek
+            // Ponovni_zacetek
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -66,7 +66,7 @@ namespace dinozaver
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "ponovni_zacetek";
+            this.Name = "Ponovni_zacetek";
             this.ResumeLayout(false);
             this.PerformLayout();
 

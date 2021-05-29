@@ -10,15 +10,14 @@ using System.Windows.Forms;
 
 namespace dinozaver
 {
-    public partial class ponovni_zacetek : Form
+    public partial class Ponovni_zacetek : Form
     {
-        Spremenljivke spremenljivke = pozdrav.spremenljivke;
-
-        public ponovni_zacetek()
+        public Ponovni_zacetek()
         {
             InitializeComponent();
         }
 
+        #region Gumbi
         /// <summary>
         /// Samo odpre igro in zapre trenutno okno.
         /// </summary>
@@ -27,17 +26,17 @@ namespace dinozaver
         private void da_Click(object sender, EventArgs e)
         {
             Close();
-            igra dino_igra = new igra();
-            dino_igra.Show();
+            new igra().Show();
         }
 
         // Nastavi top_tocke na točke trenutnega igralca, zapre zrenutno okno in odpre okno igro.
         private void ne_Click(object sender, EventArgs e)
         {
-            spremenljivke.Top_tocke = spremenljivke.igralec_rezultat[spremenljivke.ime_igralca];
+            Pozdrav.spremenljivke.Top_tocke = Pozdrav.spremenljivke.Igralec_rezultat(Pozdrav.spremenljivke.Ime_igralca);
+            Pozdrav.spremenljivke.Dosezen_nov_top_rezultat = false;
             Close();
-            igra dino_igra = new igra();
-            dino_igra.Show();
+            new igra().Show();
         }
+        #endregion
     }
 }

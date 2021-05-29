@@ -1,7 +1,7 @@
 ﻿
 namespace dinozaver
 {
-    partial class nastavitev
+    partial class Nastavitev
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace dinozaver
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(nastavitev));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Nastavitev));
             this.navodila_ime = new System.Windows.Forms.Label();
             this.da = new System.Windows.Forms.Button();
             this.ne = new System.Windows.Forms.Button();
@@ -126,7 +126,7 @@ namespace dinozaver
             this.naslov.TabIndex = 10;
             this.naslov.Text = "NASTAVITEV IGRE:";
             // 
-            // nastavitev
+            // Nastavitev
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -143,8 +143,8 @@ namespace dinozaver
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "nastavitev";
-            this.Text = "nastavitev";
+            this.Name = "Nastavitev";
+            this.Text = "Nastavitev";
             this.ResumeLayout(false);
             this.PerformLayout();
 

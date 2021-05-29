@@ -30,9 +30,9 @@ namespace dinozaver
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.Tocke = new System.Windows.Forms.Label();
+            this.tocke = new System.Windows.Forms.Label();
             this.stoparca = new System.Windows.Forms.Timer(this.components);
-            this.Top_tocke = new System.Windows.Forms.Label();
+            this.top_tocke = new System.Windows.Forms.Label();
             this.orozje_spodaj = new System.Windows.Forms.PictureBox();
             this.luknja = new System.Windows.Forms.PictureBox();
             this.tla = new System.Windows.Forms.PictureBox();
@@ -71,30 +71,30 @@ namespace dinozaver
             ((System.ComponentModel.ISupportInitialize)(this.dino_z_dodatki)).BeginInit();
             this.SuspendLayout();
             // 
-            // Tocke
+            // tocke
             // 
-            this.Tocke.AutoSize = true;
-            this.Tocke.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Tocke.Location = new System.Drawing.Point(12, 50);
-            this.Tocke.Name = "Tocke";
-            this.Tocke.Size = new System.Drawing.Size(116, 28);
-            this.Tocke.TabIndex = 5;
-            this.Tocke.Text = "Točke: 0";
+            this.tocke.AutoSize = true;
+            this.tocke.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tocke.Location = new System.Drawing.Point(12, 50);
+            this.tocke.Name = "tocke";
+            this.tocke.Size = new System.Drawing.Size(116, 28);
+            this.tocke.TabIndex = 5;
+            this.tocke.Text = "Točke: 0";
             // 
             // stoparca
             // 
             this.stoparca.Interval = 25;
             this.stoparca.Tick += new System.EventHandler(this.igra_cas);
             // 
-            // Top_tocke
+            // top_tocke
             // 
-            this.Top_tocke.AutoSize = true;
-            this.Top_tocke.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Top_tocke.Location = new System.Drawing.Point(12, 9);
-            this.Top_tocke.Name = "Top_tocke";
-            this.Top_tocke.Size = new System.Drawing.Size(285, 28);
-            this.Top_tocke.TabIndex = 6;
-            this.Top_tocke.Text = "Najboljši rezultat: 0";
+            this.top_tocke.AutoSize = true;
+            this.top_tocke.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.top_tocke.Location = new System.Drawing.Point(12, 9);
+            this.top_tocke.Name = "top_tocke";
+            this.top_tocke.Size = new System.Drawing.Size(285, 28);
+            this.top_tocke.TabIndex = 6;
+            this.top_tocke.Text = "Najboljši rezultat: 0";
             // 
             // orozje_spodaj
             // 
@@ -325,8 +325,8 @@ namespace dinozaver
             this.Controls.Add(this.orozje_sredina);
             this.Controls.Add(this.orozje_ukaz);
             this.Controls.Add(this.orozje_ukaz_slika);
-            this.Controls.Add(this.Top_tocke);
-            this.Controls.Add(this.Tocke);
+            this.Controls.Add(this.top_tocke);
+            this.Controls.Add(this.tocke);
             this.Controls.Add(this.oblak_1);
             this.Controls.Add(this.oblak_2);
             this.Controls.Add(this.oblak_3);
@@ -335,7 +335,7 @@ namespace dinozaver
             this.MaximizeBox = false;
             this.Name = "igra";
             this.Tag = "";
-            this.Text = "moj_dinozaver";
+            this.Text = "Moj dinozaver";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pritisnjen);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.spuscen);
             ((System.ComponentModel.ISupportInitialize)(this.orozje_spodaj)).EndInit();
@@ -366,9 +366,9 @@ namespace dinozaver
         private System.Windows.Forms.PictureBox kaktus_velik;
         private System.Windows.Forms.PictureBox kaktus_mini;
         private System.Windows.Forms.PictureBox dino;
-        private System.Windows.Forms.Label Tocke;
+        private System.Windows.Forms.Label tocke;
         private System.Windows.Forms.Timer stoparca;
-        private System.Windows.Forms.Label Top_tocke;
+        private System.Windows.Forms.Label top_tocke;
         private System.Windows.Forms.PictureBox ptic1;
         private System.Windows.Forms.PictureBox ptic2;
         private System.Windows.Forms.PictureBox ptic3;

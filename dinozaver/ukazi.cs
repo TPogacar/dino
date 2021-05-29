@@ -10,11 +10,9 @@ using System.Windows.Forms;
 
 namespace dinozaver
 {
-    public partial class ukazi : Form
+    public partial class Ukazi : Form
     {
-        Spremenljivke spremenljivke = pozdrav.spremenljivke;
-
-        public ukazi()
+        public Ukazi()
         {
             InitializeComponent();
             ponastavi();
@@ -22,19 +20,19 @@ namespace dinozaver
 
         private void ponastavi()
         {
-            cigaret.Text = spremenljivke.Ukaz_za_orozje(0);
-            kapa.Text = spremenljivke.Ukaz_za_orozje(1);
-            kladivo.Text = spremenljivke.Ukaz_za_orozje(2);
-            kozarec.Text = spremenljivke.Ukaz_za_orozje(3);
-            lizika.Text = spremenljivke.Ukaz_za_orozje(4);
-            pistola.Text = spremenljivke.Ukaz_za_orozje(5);
-            sablja.Text = spremenljivke.Ukaz_za_orozje(6);
-            gor.Text = spremenljivke.Ukaz_za_premik("gor");
-            dol.Text = spremenljivke.Ukaz_za_premik("dol");
-            konec_orozje.Text = spremenljivke.Konec_orozja;
+            cigaret.Text = Pozdrav.spremenljivke.Ukaz_za_orozje(0);
+            kapa.Text = Pozdrav.spremenljivke.Ukaz_za_orozje(1);
+            kladivo.Text = Pozdrav.spremenljivke.Ukaz_za_orozje(2);
+            kozarec.Text = Pozdrav.spremenljivke.Ukaz_za_orozje(3);
+            lizika.Text = Pozdrav.spremenljivke.Ukaz_za_orozje(4);
+            pistola.Text = Pozdrav.spremenljivke.Ukaz_za_orozje(5);
+            sablja.Text = Pozdrav.spremenljivke.Ukaz_za_orozje(6);
+            gor.Text = Pozdrav.spremenljivke.Ukaz_za_premik("gor");
+            dol.Text = Pozdrav.spremenljivke.Ukaz_za_premik("dol");
+            konec_orozje.Text = Pozdrav.spremenljivke.Konec_orozja;
         }
 
-
+        #region Konstante
         Dictionary<string, Keys> dovoljeni_ukazi = new Dictionary<string, Keys>()
         {
             { "A", Keys.A },
@@ -62,16 +60,16 @@ namespace dinozaver
             { "X", Keys.X },
             { "Y", Keys.Y },
             { "Q", Keys.Q },
-            { "1", Keys.D1 },
-            { "2", Keys.D2 },
-            { "3", Keys.D3 },
-            { "4", Keys.D4 },
-            { "5", Keys.D5 },
-            { "6", Keys.D6 },
-            { "7", Keys.D7 },
-            { "8", Keys.D8 },
-            { "9", Keys.D9 },
-            { "0", Keys.D0 },
+            { "1", Keys.NumPad1 },
+            { "2", Keys.NumPad2 },
+            { "3", Keys.NumPad3 },
+            { "4", Keys.NumPad4 },
+            { "5", Keys.NumPad5 },
+            { "6", Keys.NumPad6 },
+            { "7", Keys.NumPad7 },
+            { "8", Keys.NumPad8 },
+            { "9", Keys.NumPad9 },
+            { "0", Keys.NumPad0 },
             { "gor", Keys.Up },
             { "dol", Keys.Down },
             { "levo", Keys.Left },
@@ -85,7 +83,9 @@ namespace dinozaver
             { "backspace", Keys.Back },
             { "delete", Keys.Delete }
         };
+        #endregion
 
+        #region Gumbi
         /// <summary>
         /// Okno se zapre, vnešene vrednosti se izgubijo.
         /// </summary>
@@ -124,38 +124,38 @@ namespace dinozaver
                 Ustrezni_ukazi();
 
                 // poporavimo ukaze v igri
-                spremenljivke.Ukaz_za_orozje(1, kapa.Text);
-                spremenljivke.Ukaz_za_orozje(0, cigaret.Text);
-                spremenljivke.Ukaz_za_orozje(2, kladivo.Text);
-                spremenljivke.Ukaz_za_orozje(3, kozarec.Text);
-                spremenljivke.Ukaz_za_orozje(4, lizika.Text);
-                spremenljivke.Ukaz_za_orozje(5, pistola.Text);
-                spremenljivke.Ukaz_za_orozje(6, sablja.Text);
+                Pozdrav.spremenljivke.Ukaz_za_orozje(6, sablja.Text);
+                Pozdrav.spremenljivke.Ukaz_za_orozje(1, kapa.Text);
+                Pozdrav.spremenljivke.Ukaz_za_orozje(0, cigaret.Text);
+                Pozdrav.spremenljivke.Ukaz_za_orozje(2, kladivo.Text);
+                Pozdrav.spremenljivke.Ukaz_za_orozje(3, kozarec.Text);
+                Pozdrav.spremenljivke.Ukaz_za_orozje(4, lizika.Text);
+                Pozdrav.spremenljivke.Ukaz_za_orozje(5, pistola.Text);
 
-                spremenljivke.Ukaz_za_premik("gor", gor.Text);
-                spremenljivke.Ukaz_za_premik("dol", dol.Text);
+                Pozdrav.spremenljivke.Ukaz_za_premik("gor", gor.Text);
+                Pozdrav.spremenljivke.Ukaz_za_premik("dol", dol.Text);
 
-                spremenljivke.Konec_orozja = konec_orozje.Text;
+                Pozdrav.spremenljivke.Gumb_za_premik("gor", dovoljeni_ukazi[gor.Text]);
+                Pozdrav.spremenljivke.Gumb_za_premik("dol", dovoljeni_ukazi[dol.Text]);
 
-                spremenljivke.Konec_uporabe_orozja = dovoljeni_ukazi[konec_orozje.Text];
+                Pozdrav.spremenljivke.Konec_orozja = konec_orozje.Text;
+
+                Pozdrav.spremenljivke.Konec_uporabe_orozja = dovoljeni_ukazi[konec_orozje.Text];
 
                 foreach (TextBox ukaz in new TextBox[] { kladivo, pistola, sablja, cigaret, kapa, kozarec, lizika })
                 {
-                    spremenljivke.Gumb_za_orozje(ukaz.Text, dovoljeni_ukazi[ukaz.Text]);
+                    Pozdrav.spremenljivke.Gumb_za_orozje(ukaz.Text, dovoljeni_ukazi[ukaz.Text]);
                 }
 
-                foreach (TextBox ukaz in new TextBox[] { gor, dol })
-                {
-                    spremenljivke.Gumb_za_premik(ukaz.Text, dovoljeni_ukazi[ukaz.Text]);
-                }
                 // zapremo okno
                 Close();
             }
             catch
             {
                 Close();
-                new ukazi().Show();
+                new Ukazi().Show();
             }
         }
+        #endregion
     }
 }

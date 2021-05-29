@@ -9,7 +9,7 @@ namespace dinozaver
 {
     public class Spremenljivke
     {
-        // UKAZI:
+        #region Ukazi
         Dictionary<int, string> ukaz_za_orozje = new Dictionary<int, string>()
         {
             { 0, "C" },
@@ -111,9 +111,7 @@ namespace dinozaver
         Dictionary<string, Keys> gumb_za_premik = new Dictionary<string, Keys>()
         {
             { "gor", Keys.Up },
-            { "dol", Keys.Down },
-            { "levo", Keys.Left },
-            { "desno", Keys.Right }
+            { "dol", Keys.Down }
         };
         // getter
         public Keys Gumb_za_premik(string kljuc)
@@ -143,15 +141,23 @@ namespace dinozaver
             get { return konec_uporabe_orozja; }
             set { konec_uporabe_orozja = value; }
         }
+        #endregion
 
-        // TOČKE:
-        public bool dosežen_nov_top_rezultat = false;
+        #region Tocke
+        bool dosezen_nov_top_rezultat = false;  // če ne tekmujemo od začetka, moramo vedeti, ali smo že presegli prehdonji top rezultat
+        public bool Dosezen_nov_top_rezultat
+        {
+            get { return dosezen_nov_top_rezultat; }
+            set { dosezen_nov_top_rezultat = value; }
+        }
+
         int tocke = 0;  // dosežene točke = koliko ovir je igralec premagal
         public int Tocke
         {
             get { return tocke; }
             set { tocke = value; }
         }
+
         int top_tocke = 0;  // dosedaj najboljši rezultat
         public int Top_tocke
         {
@@ -159,16 +165,52 @@ namespace dinozaver
             set
             {
                 // dosežemo nov najboljši rezultat
-                if (value > top_tocke)
+                if (value > Top_tocke)
                 {
                     top_tocke = value;
-                    dosežen_nov_top_rezultat = true;
+                    Dosezen_nov_top_rezultat = true;
                 }
             }
         }
+        #endregion
 
-        // IGRALEC:
+        #region Igralec
         public Dictionary<string, int> igralec_rezultat = new Dictionary<string, int>();
-        public string ime_igralca;
+        // getter
+        public int Igralec_rezultat(string kljuc)
+        {
+            if (igralec_rezultat.ContainsKey(kljuc))
+            {
+                return igralec_rezultat[kljuc];
+            }
+            // privzeta vrednost za nevsebovan ključ je -1
+            return -1;
+        }
+        // setter
+        public void Igralec_rezultat(string kljuc, int vrednost)
+        {
+            if (igralec_rezultat.ContainsKey(kljuc))
+            {
+                igralec_rezultat[kljuc] = vrednost;
+            }
+            else
+            {
+                igralec_rezultat.Add(kljuc, vrednost);
+            }
+        }
+
+        string ime_igralca = "nov_igralec";
+        public string Ime_igralca
+        { 
+            get { return ime_igralca; }
+            set 
+            { 
+                if (value != "")
+                {
+                    ime_igralca = value;
+                }
+            }
+        }
+        #endregion
     }
 }

@@ -10,16 +10,19 @@ using System.Windows.Forms;
 
 namespace dinozaver
 {
-    public partial class pozdrav : Form
+    public partial class Pozdrav : Form
     {
+        #region Konstante
         public static Spremenljivke spremenljivke;
+        #endregion
 
-        public pozdrav()
+        public Pozdrav()
         {
             InitializeComponent();
             spremenljivke = new Spremenljivke();
         }
 
+        #region Gumbi
         /// <summary>
         /// Odpre stran za nastavljanje ukaznih tipk, trenutne ne zapre.
         /// </summary>
@@ -27,7 +30,7 @@ namespace dinozaver
         /// <param name="e"></param>
         private void nastavi_ukaze_Click(object sender, EventArgs e)
         {
-            new ukazi().Show();
+            new Ukazi().Show();
         }
 
         /// <summary>
@@ -37,7 +40,8 @@ namespace dinozaver
         /// <param name="e"></param>
         private void zacni_Click(object sender, EventArgs e)
         {
-            new nastavitev().Show();
+            new Nastavitev().Show();
         }
+        #endregion
     }
 }

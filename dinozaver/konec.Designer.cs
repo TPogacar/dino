@@ -1,7 +1,7 @@
 ﻿
 namespace dinozaver
 {
-    partial class konec
+    partial class Konec
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace dinozaver
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(konec));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Konec));
             this.rezultat = new System.Windows.Forms.TextBox();
             this.da = new System.Windows.Forms.Button();
             this.ne = new System.Windows.Forms.Button();
@@ -75,7 +75,7 @@ namespace dinozaver
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // konec
+            // Konec
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -88,7 +88,7 @@ namespace dinozaver
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "konec";
+            this.Name = "Konec";
             this.ResumeLayout(false);
             this.PerformLayout();
 
