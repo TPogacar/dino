@@ -1,4 +1,0 @@
-nov_igralec;0
-jaz;65
-ti;15
-tamara;4

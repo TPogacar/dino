@@ -106,7 +106,7 @@ namespace dinozaver
                 // neveljaven ukaz => napaka!
                 if (!dovoljeni_ukazi.Keys.Contains(ukaz.Text))
                 {
-                    MessageBox.Show("Neustrezen vnos podatkov! Prosimo, poskusite ponovno!", "NAPAKA!", MessageBoxButtons.OK);
+                    MessageBox.Show($"Neustrezen vnos podatkov! Prosimo, upoštevajte navodila! Neustrezen vnos: {ukaz.Text}", "NAPAKA!", MessageBoxButtons.OK);
                 }
             }
         }

@@ -54,3 +54,7 @@ D:\PROG3\projekt\dino\dinozaver\obj\Debug\aa\dinozaver.resources.dll
 D:\PROG3\projekt\dino\dinozaver\obj\Debug\sl-SI\dinozaver.resources.dll
 D:\PROG3\projekt\dino\dinozaver\obj\Debug\dinozaver.exe
 D:\PROG3\projekt\dino\dinozaver\obj\Debug\dinozaver.pdb
+D:\PROG3\projekt\dino\dinozaver\bin\Debug\dinozaver.exe.manifest
+D:\PROG3\projekt\dino\dinozaver\bin\Debug\dinozaver.application
+D:\PROG3\projekt\dino\dinozaver\obj\Debug\dinozaver.exe.manifest
+D:\PROG3\projekt\dino\dinozaver\obj\Debug\dinozaver.application
